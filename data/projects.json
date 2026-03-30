@@ -4,14 +4,14 @@
     "id": "test-1",
     "title": "Dark Academia Concept",
     "category": "Visual Design",
-    "thumb": "sample 1.jpg",
+    "thumbnails": "sample 1.jpg",
     "link": "docs/README.md"
   },
   {
     "id": "test-2",
     "title": "Teal Branding Mockup",
     "category": "Graphic Ops",
-    "thumb": "sample 2.jpg",
+    "thumbnails": "sample 2.jpg",
     "link": "docs/README.md"
   }
 ]
