@@ -1,4 +1,3 @@
-
 [
   {
     "id": "test-1",
@@ -11,7 +10,7 @@
     "id": "test-2",
     "title": "Teal Branding Mockup",
     "category": "Graphic Ops",
-    "thumb": "assets/thumbnails/sample-2.jpg",
+    "thumb": "assets/thumbnails/sample-2.jpg", 
     "link": "docs/README.md"
   }
 ]
