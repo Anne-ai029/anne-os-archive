@@ -1,16 +1,16 @@
 [
   {
-    "id": "test-1",
-    "title": "Dark Academia Concept",
-    "category": "Visual Design",
-    "thumb": "assets/thumbnails/sample-1.jpg",
-    "link": "docs/README.md"
+    "id": "qdr-001",
+    "title": "Mug Collection 2026",
+    "category": "Product Design",
+    "thumb": "assets/thumbnails/sample-1.jpg", 
+    "link": "https://canva.link/aadclkx0h2pu4r4" 
   },
   {
-    "id": "test-2",
-    "title": "Teal Branding Mockup",
-    "category": "Graphic Ops",
-    "thumb": "assets/thumbnails/sample-2.jpg", 
-    "link": "docs/README.md"
+    "id": "qdr-002",
+    "title": "Branding Case Study",
+    "category": "Visual Strategy",
+    "thumb": "assets/thumbnails/sample-2.jpg",
+    "link": "https://canva.link/aadclkx0h2pu4r4"
   }
 ]
