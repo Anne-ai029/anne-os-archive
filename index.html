@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ANNE_OS Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slider-container::-webkit-scrollbar { display: none; }
+        .slider-container { -ms-overflow-style: none; scrollbar-width: none; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#1a1a1a] text-[#e5e5e5] font-sans">
 
+    <header class="p-8 text-center">
+        <h1 class="text-3xl font-bold text-[#008080]">ANNE_OS Archive</h1>
+        <p class="text-sm text-gray-400 mt-2">Executive Support & Creative Solutions</p>
+    </header>
+
+    <div class="relative max-w-6xl mx-auto px-4 group">
+        <button onclick="document.getElementById('slider').scrollBy({left: -400, behavior: 'smooth'})" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-4 rounded-full opacity-0 group-hover:opacity-100 transition-all">
+            <svg class="w-6 h-6 text-[#008080]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2"/></svg>
+        </button>
+
+        <div id="slider" class="slider-container flex overflow-x-auto gap-6 pb-12 snap-x snap-mandatory">
+            </div>
+
+        <button onclick="document.getElementById('slider').scrollBy({left: 400, behavior: 'smooth'})" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 p-4 rounded-full opacity-0 group-hover:opacity-100 transition-all">
+            <svg class="w-6 h-6 text-[#008080]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-width="2"/></svg>
+        </button>
+    </div>
+
+    <script>
+        // This script reads your projects.json and builds the slider
+        fetch('./data/projects.json')
+            .then(response => response.json())
+            .then(data => {
+                const slider = document.getElementById('slider');
+                data.forEach(project => {
+                    const card = `
+                        <div class="snap-center shrink-0 w-[320px] bg-[#262626] rounded-xl overflow-hidden border border-gray-800 hover:border-[#008080] transition-all transform hover:-translate-y-1">
+                            <img src="${project.thumb}" alt="${project.title}" class="w-full h-[400px] object-cover bg-neutral-900">
+                            <div class="p-5">
+                                <p class="text-[10px] uppercase tracking-widest text-[#008080] font-bold mb-1">${project.category}</p>
+                                <h3 class="text-lg font-semibold">${project.title}</h3>
+                                <a href="${project.link}" class="inline-block mt-4 text-xs text-gray-400 hover:text-white transition-colors underline decoration-[#008080]">View Project Details</a>
+                            </div>
+                        </div>
+                    `;
+                    slider.innerHTML += card;
+                });
+            })
+            .catch(err => console.error("Error loading projects:", err));
+    </script>
+</body>
+</html>
