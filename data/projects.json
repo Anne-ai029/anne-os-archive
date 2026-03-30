@@ -1,16 +1,17 @@
+
 [
   {
-    "id": "qdr-001",
-    "title": "Dark Academia Ceramic",
-    "category": "Product Design",
-    "thumb": "assets/thumbnails/mug-dark.webp",
-    "link": "docs/project-mug.md"
+    "id": "test-1",
+    "title": "Dark Academia Concept",
+    "category": "Visual Design",
+    "thumb": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=800",
+    "link": "docs/README.md"
   },
   {
-    "id": "qdr-002",
-    "title": "Executive Branding",
-    "category": "Visual Identity",
-    "thumb": "assets/thumbnails/branding-teal.webp",
-    "link": "docs/project-branding.md"
+    "id": "test-2",
+    "title": "Teal Branding Mockup",
+    "category": "Graphic Ops",
+    "thumb": "https://images.unsplash.com/photo-1527067829737-402993088e6b?auto=format&fit=crop&q=80&w=800",
+    "link": "docs/README.md"
   }
 ]
