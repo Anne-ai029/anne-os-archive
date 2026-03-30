@@ -1,0 +1,16 @@
+[
+  {
+    "id": "qdr-001",
+    "title": "Dark Academia Ceramic",
+    "category": "Product Design",
+    "thumb": "assets/thumbnails/mug-dark.webp",
+    "link": "docs/project-mug.md"
+  },
+  {
+    "id": "qdr-002",
+    "title": "Executive Branding",
+    "category": "Visual Identity",
+    "thumb": "assets/thumbnails/branding-teal.webp",
+    "link": "docs/project-branding.md"
+  }
+]
